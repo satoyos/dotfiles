@@ -28,5 +28,6 @@
     "editor.minimap.enabled": false,
     "kite.showWelcomeNotificationOnStartup": false,
     "terminal.integrated.shell.osx": "/bin/zsh",
-    "editor.accessibilitySupport": "off"
+    "editor.accessibilitySupport": "off",
+    "git.autofetch": true
 }
