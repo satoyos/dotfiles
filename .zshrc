@@ -1,3 +1,6 @@
+# dotfiles
+source $HOME/.zshenv.machine
+
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 #export ZSH=$HOME/src/zsh_related/oh-my-zsh
@@ -85,14 +88,18 @@ setopt hist_ignore_all_dups
 setopt hist_ignore_space
 zstyle ':completion:*:default' menu select=1
 
-. /usr/local/etc/profile.d/z.sh
-function _Z_precmd {
-  z --add "$(pwd -P)" 61 }
-precmd_functions=($precmd_functions _Z_precmd)
+#. /usr/local/etc/profile.d/z.sh
+. $Z_CMD_DIR/z.sh
+# function _Z_precmd {
+#  z --add "$(pwd -P)" 61 }
+#precmd_functions=($precmd_functions _Z_precmd)
+
+# homebrew
+export PATH=$PATH:$BREW_DIR/bin
 
 eval "$(rbenv init -)"
 eval "(hub alias -s)"
-. `brew --prefix`/etc/profile.d/z.sh
+# . `brew --prefix`/etc/profile.d/z.sh
 
 
 # 以下、「zshで範囲選択・削除・コピー・切り取りする」より
@@ -139,7 +146,9 @@ bindkey "^w" backward-kill-word-or-region
 eval "$(direnv hook zsh)"
 
 # for AWS CLI
-source /usr/local/share/zsh/site-functions/_aws
+# source /usr/local/share/zsh/site-functions/_aws
+source $SITE_FUNCTIONS_DIR/_aws
+
 
 # for pet
 function prev() {
