@@ -38,5 +38,19 @@
     {
         "key": "alt+cmd+f",
         "command": "-editor.action.startFindReplaceAction"
+    },
+    {
+        "key": "shift+alt+c",
+        "command": "emacs-mcx.transformToTitlecase",
+        "when": "config.emacs-mcx.useMetaPrefixMacCmd && editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "cmd+c",
+        "command": "-emacs-mcx.transformToTitlecase",
+        "when": "config.emacs-mcx.useMetaPrefixMacCmd && editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+alt+c",
+        "command": "workbench.action.reloadWindow"
     }
 ]
