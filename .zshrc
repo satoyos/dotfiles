@@ -61,10 +61,10 @@ source $ZSH/oh-my-zsh.sh
 export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH:$HOME/.nodebrew/current/bin
 
 # pyenv
-#PYENV_ROOT=~/.pyenv
-#export PATH=$PATH:$PYENV_ROOT/bin
-#eval "$(pyenv init -)"
-# eval "$(pyenv virtualenv-init -)"
+export PYENV_ROOT=~/.pyenv
+export PATH=$PYENV_ROOT/bin:$PATH
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -185,3 +185,10 @@ fi
 
 # Then, source plugins and add commands to $PATH
 zplug load --verbose
+
+# jenv
+export JENV_ROOT="$HOME/.jenv"
+if [ -d "${JENV_ROOT}" ]; then
+  export PATH="$JENV_ROOT/bin:$PATH"
+  eval "$(jenv init -)"
+fi
