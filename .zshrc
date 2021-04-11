@@ -61,7 +61,7 @@ source $ZSH/oh-my-zsh.sh
 export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH:$HOME/.nodebrew/current/bin
 
 # pyenv
-export PYENV_ROOT=~/.pyenv
+# export PYENV_ROOT=~/.pyenv
 export PATH=$PYENV_ROOT/bin:$PATH
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
