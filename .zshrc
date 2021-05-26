@@ -157,7 +157,7 @@ function prev() {
 }
 
 # Colorize
-alias cat="ccat"
+alias ccat='ccat -G Keyword="*glay*" -G Decimal="glay" -G Plaintext="glay" -G Punctuation="red"'
 
 # use keychain for SSH
 keychain -q ~/.ssh/id_rsa
