@@ -60,6 +60,8 @@
 !/.config/**
 !/.gitignore_global
 !/.gitconfig_shared
+!/hammerspoon
+!/vscode
 
 !/README.md
 !/LICENSE
