@@ -169,6 +169,11 @@ export PATH="/usr/local/opt/ncurses/bin:$PATH"
 # zplug settings
 source $ZPLUG_HOME/init.zsh
 
+# settigs for zplug: zsh-syntax-highlighting
+export ZSH_HIGHLIGHT_HIGHLIGHTERS=(main line brackets pattern cursor)
+typeset -A ZSH_HIGHLIGHT_STYLES
+export ZSH_HIGHLIGHT_STYLES[line]='bold'
+
 # plugins
 zplug "plugins/git", from:oh-my-zsh
 # zplug "plugins/kubectl", from:oh-my-zsh
