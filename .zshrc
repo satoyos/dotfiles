@@ -171,7 +171,7 @@ source $ZPLUG_HOME/init.zsh
 
 # plugins
 zplug "plugins/git", from:oh-my-zsh
-zplug "plugins/kubectl", from:oh-my-zsh
+# zplug "plugins/kubectl", from:oh-my-zsh
 zplug "zsh-users/zsh-autosuggestions"
 zplug "zsh-users/zsh-syntax-highlighting"
 
