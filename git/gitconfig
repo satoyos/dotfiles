@@ -1,0 +1,10 @@
+[user]
+	name = Yoshifumi Sato
+	email = sato_yos@nifty.com
+[grep]
+    lineNumber = true
+[alias]
+    st = status
+    ci = commit
+    co = checkout
+
